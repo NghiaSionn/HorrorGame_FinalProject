@@ -4,6 +4,7 @@ using UnityEngine;
 using Firebase;
 using Firebase.Auth;
 using System;
+using Fusion; // Thêm thư viện Fusion
 
 public class FirebaseManager : MonoBehaviour
 {
@@ -104,6 +105,17 @@ public class FirebaseManager : MonoBehaviour
 
             AuthResult result = task.Result;
             Debug.Log("Khách đăng nhập thành công! ID: " + result.User.UserId);
+
+            // GỌI PHOTON CHẠY SAU KHI ĐĂNG NHẬP KHÁCH THÀNH CÔNG
+            Debug.Log("Chuẩn bị gọi Photon...");
+            UnityMainThreadDispatcher.Instance().Enqueue(() => {
+                Debug.Log("Đang chạy trên luồng chính. Gọi StartGame...");
+                if (FusionNetworkManager.Instance == null) {
+                    Debug.LogError("LỖI: Chưa kéo script FusionNetworkManager vào Scene!");
+                    return;
+                }
+                FusionNetworkManager.Instance.StartGame(GameMode.Shared);
+            });
         });
     }
 
@@ -146,6 +158,17 @@ public class FirebaseManager : MonoBehaviour
 
             AuthResult result = task.Result;
             Debug.Log("Đăng nhập thành công! ID: " + result.User.UserId);
+
+            // GỌI PHOTON CHẠY SAU KHI ĐĂNG NHẬP EMAIL THÀNH CÔNG
+            Debug.Log("Chuẩn bị gọi Photon...");
+            UnityMainThreadDispatcher.Instance().Enqueue(() => {
+                Debug.Log("Đang chạy trên luồng chính. Gọi StartGame...");
+                if (FusionNetworkManager.Instance == null) {
+                    Debug.LogError("LỖI: Chưa kéo script FusionNetworkManager vào Scene!");
+                    return;
+                }
+                FusionNetworkManager.Instance.StartGame(GameMode.Shared);
+            });
         });
     }
 
