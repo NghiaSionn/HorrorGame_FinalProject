@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "595048815138",
+    "project_id": "horrorgame-ba86f",
+    "storage_bucket": "horrorgame-ba86f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595048815138:android:a52a1011126a8d8855087b",
+        "android_client_info": {
+          "package_name": "com.nghiapham.horrorgame"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWuiFiKsGkNFZkpe8bfzsHYUyx35wA-rE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
