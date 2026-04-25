@@ -1,5 +1,5 @@
 ﻿<Solution>
   <Project Path="Crest.csproj" />
-  <Project Path="Crest.Helpers.Editor.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="Crest.Helpers.Editor.csproj" />
 </Solution>
