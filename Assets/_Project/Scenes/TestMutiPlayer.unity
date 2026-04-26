@@ -772,8 +772,8 @@ GameObject:
   - component: {fileID: 1097728044841765528}
   - component: {fileID: 1097728044841765527}
   - component: {fileID: 1097728044841765526}
-  - component: {fileID: 1097728044841765525}
   - component: {fileID: 1097728044841765524}
+  - component: {fileID: 1097728044841765525}
   m_Layer: 0
   m_Name: Boat
   m_TagString: Untagged
@@ -1801,11 +1801,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Crest::Crest.SimpleFloatingObject
   _version: 0
   _raiseObject: 1
-  _buoyancyCoeff: 3
+  _buoyancyCoeff: 8
   _boyancyTorque: 8
   _accelerateDownhill: 0
   _maximumBuoyancyForce: Infinity
-  _objectWidth: 3
+  _objectWidth: 100
   _forceHeightOffset: -0.3
   _dragInWaterUp: 3
   _dragInWaterRight: 2
@@ -1820,9 +1820,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319818776779903017}
   serializedVersion: 5
-  m_Mass: 500
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_Mass: 5000
+  m_LinearDamping: 2
+  m_AngularDamping: 3
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
