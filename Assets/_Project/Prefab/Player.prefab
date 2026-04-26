@@ -858,11 +858,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7401822394066384971}
   - component: {fileID: 3403318630766505569}
+  - component: {fileID: 1436597987892781967}
   - component: {fileID: 5746196146577233024}
   - component: {fileID: 2997807533286495269}
   - component: {fileID: -8151722891319592478}
   - component: {fileID: 9164076199153249662}
-  - component: {fileID: 1436597987892781967}
   - component: {fileID: 8257035488449574669}
   m_Layer: 0
   m_Name: Player
@@ -911,6 +911,28 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &1436597987892781967
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2782706676776329428}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: d9cd8eb4a074cd84ab2686c58bcf21d9, type: 3}
+  m_Controller: {fileID: 9100000, guid: 961b09bff0ae8214f9f4b85de555d738, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!143 &5746196146577233024
 CharacterController:
   m_ObjectHideFlags: 0
@@ -990,30 +1012,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   playerCamera: {fileID: 7405840662947706100}
   walkSpeed: 2.5
-  runSpeed: 6.5
+  runSpeed: 8
   mouseSensitivity: 5
---- !u!95 &1436597987892781967
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2782706676776329428}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: d9cd8eb4a074cd84ab2686c58bcf21d9, type: 3}
-  m_Controller: {fileID: 9100000, guid: 961b09bff0ae8214f9f4b85de555d738, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &8257035488449574669
 MonoBehaviour:
   m_ObjectHideFlags: 0
